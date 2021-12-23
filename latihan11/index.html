@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Filter</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		/*
+			Filter
+			blur(px)
+			brightness(angka | %)
+			contrast(angka | %)
+			saturate(angka | %)
+			grayscale(angka | %)
+			sepia(angka | %)
+			hue-rotate(deg)
+			invert(angka | %)
+			opacity(angka | %)
+			drop-shadow(sama seperti box-shadow)
+		*/
+		img {
+			filter: blur(10px) drop-shadow(5px 5px 5px black);
+			transition: 1s;
+		}
+		img:hover {
+			filter: blur(0) drop-shadow(5px 5px 5px black);
+		}
+	</style>
+</head>
+<body>
+	<img src="gahasa.jpg" alt="Gahasa Purba" width="300">
+</body>
+</html>

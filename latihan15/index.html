@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Animation</title>
+	<style>
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			/*transition: 2s ease all;*/
+			animation: animasiKotak 3s ease infinite alternate forwards running;
+		}
+		.kotak:hover {
+			/*width: 500px;*/
+			/*animation: animasiKotak 2s ease;*/
+		}
+		@keyframes animasiKotak {
+			0% {
+				width: 200px;
+			}
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="kotak"></div>
+</body>
+</html>
